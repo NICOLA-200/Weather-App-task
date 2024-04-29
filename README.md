@@ -1,16 +1,6 @@
 # Weather-App-React-Native
 
-![Image](https://cdn.dribbble.com/userupload/6958364/file/original-9ca93c2dd96a84d5364670135de826d4.png?resize=2048x1536)
 
-  
-  <p align="left">
-    <a href="https://www.youtube.com/channel/UCILovaLl2fUPAww1bGJ4sJQ?sub_confirmation=1"><img alt="Youtube" title="Youtube"  src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/></a>
-    <p>
-      Watch Tutorial on YouTube <a href="https://youtu.be/953vyZMO4cM" target="_blank">Weather App in React Native</a>
-    </p>
-    
-  </p>
-  
 
 ## Get Started
 
@@ -26,27 +16,31 @@ go to https://www.weatherapi.com . create an account and get the api key then us
 
 Run The app
 
-### `npm start` or `yarn start`
+### `npm run start` or `yarn run start`
 
 Runs your app in development mode.
 
 Open it in the [Expo app](https://expo.io) on your phone to view it. It will reload if you save edits to your files, and you will see build errors and logs in the terminal.
 
-#### `npm run ios` or `yarn run ios`
-
-Like `npm start` / `yarn start`, but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed.
-
 #### `npm run android` or `yarn run android`
 
-Like `npm start` / `yarn start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup).
+Like `npm start` / `yarn start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools 
 
 <br />
 
-💙 If you like this project, give it a ⭐ and share it with friends!
+## Key decision
 
-<p align="left">
-  <a href="https://www.youtube.com/channel/UCILovaLl2fUPAww1bGJ4sJQ?sub_confirmation=1"><img alt="Youtube" title="Youtube" src="https://img.shields.io/badge/-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white"/></a>
-  <a href="https://twitter.com/codewithnomi_"><img alt="Twitter" title="Twitter" src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
-</p>
+Building with React Native: I opted to develop the weather app using React Native due to its ability to create applications for both iOS and Android platforms. Additionally, my proficiency in mobile development is centered around React Native
 
-<a href="https://www.buymeacoffee.com/syednoman">☕ Buy me a coffee</a>
+  <br />
+
+## Challenges
+
+Handling Unavailable Locations: One significant challenge was managing responses when a location wasn't found. I implemented a mechanism where the application awaited a response for a searched location, but if it didn't exist, no response was returned. I just had to wait and wait. 
+
+
+## Other  implementation
+
+Data Caching: To enhance user experience, I implemented data caching. Whenever a location is searched, its data is stored in the async-storage for quicker access in subsequent searches
+
+
