@@ -60,7 +60,7 @@ export default function HomeScreen() {
   const fetchMyWeatherData = async ()=>{
     let myCity = await getData('city');
     let cityName = 'Kigali';
-    if(myCity){
+    if(myCity){ 
       cityName = myCity;
     }
     fetchWeatherForecast({

@@ -27,3 +27,17 @@ export const fetchLocations = params=>{
     let locationsUrl = locationsEndpoint(params);
     return apiCall(locationsUrl);
 }
+
+
+
+// export const fetchWeatherTruffs = async params => {
+
+//     try  {
+//      const response =  await  axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${params.cityName}&days=${params.days}`);
+//       return response;
+
+
+//     } catch (error) {
+//         console.error(error)
+//     }
+// }
